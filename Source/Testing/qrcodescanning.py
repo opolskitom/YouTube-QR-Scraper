@@ -28,20 +28,17 @@ while(True):
     if len(decodeObj) > 0:
         decodedData = decodeObj[0]
         decodedString = str(decodedData)
-        print(decodedString)
 
         if len(decodedString) > 18:
             myWebLink = ''
-            myWebCheck = decodedString[15:19]
             #Website URL Scraping
-            if myWebCheck == 'http':
+            if decodedString[15:19] == 'http':
                 i = 15
                 #read until apostrophe
                 while (decodedString[i] != "'") :
                     myWebLink += decodedString[i]
                     i += 1
                 
-                print(myWebLink)
                 qrDataSet.add(myWebLink)
 
             #PKMN TCG Code Scraping
