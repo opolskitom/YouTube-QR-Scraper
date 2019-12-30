@@ -29,6 +29,12 @@ This program uses multiple different imports which can be installed using pip
      ```
      - used for barcode/qr scanning images through the frames in cv2
      
+5. pyQt5
+     ```
+     pip install PyQt5
+     ```
+     - used for UI elements
+     
     
 # Usage
 Wrote this without any intention of big usage as a newer programmer, feel free to use the code in other projects. Credit not required but appreciated.
