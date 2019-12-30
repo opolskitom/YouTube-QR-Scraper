@@ -13,7 +13,6 @@ import pafy
 import cv2
 import numpy as np
 import pyzbar.pyzbar as pyzbar
-from tkinter import *
 from PyQt5 import QtGui, QtWidgets, uic
 
 class QRCodeScraper:
