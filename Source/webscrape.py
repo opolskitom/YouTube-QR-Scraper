@@ -14,6 +14,12 @@ import cv2
 import numpy as np
 import pyzbar.pyzbar as pyzbar
 from PyQt5 import QtGui, QtWidgets, uic
+import sys, os 
+
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 class QRCodeScraper:
 
@@ -27,9 +33,9 @@ class QRCodeScraper:
         #initializing window
         super(QRCodeScraper,self).__init__()
         self.app = QtWidgets.QApplication([])
-        self.call = uic.loadUi('myWindow.ui')
+        self.call = uic.loadUi(resource_path("myWindow.ui"))
         self.call.setWindowTitle("YouTube QR Scraper")
-        self.call.setWindowIcon(QtGui.QIcon("qrcodeicon.png"))
+        self.call.setWindowIcon(QtGui.QIcon(resource_path("qricon.ico")))
 
         #setting functionalities for widgets
 

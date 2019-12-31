@@ -52,37 +52,33 @@
       </property>
       <layout class="QVBoxLayout" name="titleVerticleLayout">
        <item>
-        <widget class="QLabel" name="youtubeLabel">
-         <property name="font">
-          <font>
-           <family>Segoe UI Historic</family>
-           <pointsize>20</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Youtube</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QLabel" name="qrcodescraperLabel">
          <property name="font">
           <font>
-           <family>Segoe UI Historic</family>
-           <pointsize>20</pointsize>
+           <family>Segoe UI</family>
+           <pointsize>16</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>QR Code Scraper</string>
+          <string>YouTube                      QR Code Scraper</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLabel" name="creatorLabel">
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="text">
           <string>by Tom Opolski</string>
          </property>
@@ -233,7 +229,7 @@
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Created by: Thomas Opolski</string>
+          <string>Created by: Tom Opolski</string>
          </property>
         </widget>
        </item>
