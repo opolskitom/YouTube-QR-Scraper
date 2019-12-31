@@ -1,5 +1,8 @@
 # YouTube Video QR Code Scraper
  Small program to scrape YouTube videos for QR codes written in Python in under a week. Primarily used for learning Python GUI elements and imports as well as general syntaxing and experience (as someone that doesn't know python lol).
+ 
+ # Demonstration
+ Video: To be made soon
 
 # Imports
 This program uses multiple different imports which can be installed using pip
@@ -37,4 +40,4 @@ This program uses multiple different imports which can be installed using pip
      
     
 # Usage
-Wrote this without any intention of big usage as a newer programmer, feel free to use the code in other projects. Credit not required but appreciated.
+Wrote this without any intention of big usage as a newer programmer, feel free to use the code in other projects.
