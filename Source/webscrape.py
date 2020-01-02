@@ -1,6 +1,6 @@
 # Created by: Thomas Opolski
 # Date Created: 12/27/19
-# Date Modified: 12/27/19
+# Date Modified: 1/2/20
 
 # Program Description: The idea is a basic youtube link parser that gets all
 # videos within a certain search criteria or link, puts them in a list, and downlaods 
@@ -16,6 +16,7 @@ import pyzbar.pyzbar as pyzbar
 from PyQt5 import QtGui, QtWidgets, uic
 import sys, os 
 
+#for using relative path instead of absolute path
 def resource_path(relative_path):
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
@@ -54,6 +55,7 @@ class QRCodeScraper:
         self.call.show()
         self.app.exec()
 
+    #add video button function call
     def addVideo(self):
         userUrl = self.call.userLinkEdit.text()
         if (self.searchLinkEnabled):
@@ -63,9 +65,11 @@ class QRCodeScraper:
         else:
             self.call.videoQueueList.addItem(userUrl)
 
+    #clear video list
     def clearVideo(self):
         self.call.videoQueueList.clear()
 
+    #scan video button function call
     def scanVideo(self):
         outputList = []
 
@@ -78,6 +82,7 @@ class QRCodeScraper:
         for output in outputList:
             self.call.outputDataList.addItem(output)
 
+    #checkmark statechanges
     def stateChangeWebsite(self):
         if self.websiteQREnabled:
             self.websiteQREnabled = False
@@ -102,6 +107,7 @@ class QRCodeScraper:
         else:
             self.searchLinkEnabled = True
  
+    #get data from pafy objects
     def getQrDataSet(self, play):
         qrDataSet = set()
 
@@ -153,6 +159,7 @@ class QRCodeScraper:
 
         return qrDataSet
 
+    #get the data set from a single video url
     def getFromURL(self, myURL):
 
         try:
@@ -170,6 +177,7 @@ class QRCodeScraper:
             print("Invalid URL")
             return []
 
+    #get the data set from a search url
     def getURLSFromSearch(self, myURL):
         #setting up beautiful soup
         result = requests.get(myURL)
