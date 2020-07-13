@@ -18,9 +18,8 @@ import sys, os
 
 #for using relative path instead of absolute path
 def resource_path(relative_path):
-    if hasattr(sys, '_MEIPASS'):
-        return os.path.join(sys._MEIPASS, relative_path)
-    return os.path.join(os.path.abspath("."), relative_path)
+    dirname = os.path.dirname(__file__)
+    return os.path.join(dirname, relative_path)
 
 class QRCodeScraper:
 
