@@ -4,7 +4,7 @@
  # Demonstration
 https://www.youtube.com/watch?v=PX6tg_plEXE
 
-[![Demo](https://img.youtube.com/vi/PX6tg_plEXE/maxresdefault.jpg)](https://youtu.be/PX6tg_plEXE)
+[![Demo](https://i.ytimg.com/vi/PX6tg_plEXE/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBa5HxZtYze8-1Sp-9Y2bGoysn3RA)](https://youtu.be/PX6tg_plEXE)
 
 # Imports
 This program uses multiple different imports which can be installed using pip
